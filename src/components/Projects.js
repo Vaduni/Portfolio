@@ -1,4 +1,3 @@
-// components/Projects.js
 
 const projects = [
   {
@@ -37,14 +36,14 @@ export default function Projects() {
               key={title}
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
             >
-              <h3 className="text-2xl font-semibold mb-2 text-indigo-600">{title}</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-600">{title}</h3>
               <p className="text-gray-700 mb-4">{description}</p>
               <div className="flex space-x-4">
                 <a
                   href={github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-indigo-600 font-medium hover:underline"
+                  className="text-primary font-medium hover:underline"
                 >
                   GitHub
                 </a>
@@ -52,7 +51,7 @@ export default function Projects() {
                   href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-indigo-600 font-medium hover:underline"
+                  className="text-primary font-medium hover:underline"
                 >
                   Live Demo
                 </a>

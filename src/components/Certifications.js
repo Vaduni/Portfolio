@@ -36,7 +36,7 @@ export default function Certifications() {
               rel="noopener noreferrer"
               className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <h3 className="text-xl font-semibold text-indigo-600 mb-2">{title}</h3>
+              <h3 className="text-xl font-semibold text-primary mb-2">{title}</h3>
               <p className="text-gray-700 mb-1">{issuer}</p>
               <p className="text-gray-500 text-sm">{date}</p>
             </a>
