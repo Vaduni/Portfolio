@@ -25,7 +25,7 @@ export default function Navbar() {
         </a>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <ul className="hidden md:flex space-x-8 text-gray-500 font-medium">
           {["Home", "About", "Projects", "Skills", "Certifications", "Contact"].map((section) => (
             <li key={section}>
               <a
