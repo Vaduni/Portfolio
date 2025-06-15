@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e2e2df;
+  --background: #023047;
   --foreground: #023047;
   --color-primary: #023047;
   --color-navbar-scrolled: #d6e2e9;  
@@ -10,11 +10,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0e434e;
+    --background: #453a49;
     --foreground: #bab5a9;
     --color-primary: #bab5a9;
-    --color-navbar-scrolled: #023047;
-    --color-about-bg: #2a2e35;
+    --color-navbar-scrolled:#453a49 ;
+    --color-about-bg:#948c9a;
   }
 }
 
@@ -23,7 +23,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Optional: Hide scrollbars for horizontal scroll sections */
+/* Hide scrollbars for horizontal scroll sections */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
