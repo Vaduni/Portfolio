@@ -56,12 +56,11 @@ export default function Projects() {
   const scrollRef = useRef(null);
   const isHovered = useRef(false);
 
-  // Auto-scroll logic
   useEffect(() => {
     const container = scrollRef.current;
     const scroll = () => {
       if (!isHovered.current) {
-        container.scrollLeft += 2; // adjust speed here
+        container.scrollLeft += 2; 
         if (container.scrollLeft >= container.scrollWidth / 2) {
           container.scrollLeft = 0;
         }
@@ -71,7 +70,7 @@ export default function Projects() {
     return () => clearInterval(interval);
   }, []);
 
-  const scrollingProjects = [...projects, ...projects]; // duplicate for infinite effect
+  const scrollingProjects = [...projects, ...projects]; 
 
   return (
     <section id="projects" className="py-16 bg-white">
@@ -94,7 +93,6 @@ export default function Projects() {
                 key={`${title}-${idx}`}
                 className="group relative min-w-[300px] max-w-[300px] bg-[var(--color-navbar-scrolled)] border-2 border-gray-300 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex-shrink-0 overflow-hidden"
               >
-                {/* Image */}
                 <div className="p-4 pb-0">
                   <div className="border border-gray-200 rounded-lg overflow-hidden">
                     <img
@@ -105,7 +103,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Hover overlay with description + badge */}
                 <div className="absolute inset-0 bg-[var(--color-navbar-scrolled)] bg-opacity-90 text-[var(--color-primary)] text-sm p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col items-center justify-center text-center">
                   <p className="mb-3">{description}</p>
                   {label && icon && (
@@ -116,7 +113,6 @@ export default function Projects() {
                   )}
                 </div>
 
-                {/* Title and links */}
                 <div className="p-4 pt-3 z-20 relative">
                   <h3 className="text-xl font-semibold mb-2 text-[var(--color-primary)]">
                     {title}
